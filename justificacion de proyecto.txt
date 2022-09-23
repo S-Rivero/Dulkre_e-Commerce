@@ -1,0 +1,51 @@
+JUSTIFICACIÓN DE PROYECTO
+
+e-Commerce para 
+Corporación del Bosque
+
+Rivero Santiago
+
+
+
+Contexto:
+	El cliente, dueño de una empresa dedicada a la venta de insumos dieteticos, nos contactó con intenciones de incrementar la exhibición de sus productos con un e-commerce
+
+
+
+Requisitos:
+  La página deberá tener una sección superior donde se podrá acceder a la cuenta del usuario, a su carrito, y a los diversos sectores de la página.
+  Deben presentarse los productos con sus respectivos precios de una manera centralizada para llamar la atención
+  Deberá tener un formulario donde las empresas que tengan intenciones de comprar al mayor puedan enviar sus datos para comunicarse con el cliente.
+  Luego de la presentación de los productos y el formulario de contacto se deberá presentar información sobre la empresa como los datos de contacto, métodos de pago, medios de envío, entre otros.
+
+
+
+Elementos a desarrollar:
+
+Para todas las interfaces:
+  Un navbar con los hipervínculos al catálogo, a la información de la cuenta del usuario, al carrito del mismo y a la interfaz de “Mayoristas”.
+  El nombre de la empresa se mostrará en el navbar superior, esté siendo todo el tiempo visible (fixed).
+  Un footer con los datos de contacto, métodos de pago, medios de envío, redes sociales.
+
+Para el Home:
+  Un section donde se puedan visualizar recetas con los productos promocionados.
+  Un main donde se puedan visualizar los productos destacados.
+
+Para el Catálogo:
+  Un div donde se puedan visualizar recetas con los productos en venta.
+  Un section donde se mostrarán los productos con sus precios en forma de cuadrícula.
+  Un div lateral donde se podrán aplicar filtros para una búsqueda más rápida de los productos.
+
+Para la interfaz de “Mi Cuenta”:
+  Un div lateral estático (fixed) donde se visualice un menú con 3 botones disponibles para interactuar: “Datos personales”, “Mis Compras”, “Ajustes”. Estos botones redirigiran la página a sus respectivas rutas (/MiCuenta/Datos, /MiCuenta/Compras, /MiCuenta/Ajustes).
+  Un section donde se mostrarán los datos del menú seleccionado
+    “Datos Personales”: Se mostrarán los datos del usuario.
+    “Mis compras”: Se mostrarán los pedidos del usuario y su estado (estos pueden estar en proceso, en camino o completados).
+    “Ajustes”: El usuario podrá modificar sus datos personales, su contraseña y administrar sus tarjetas.
+
+Para la interfaz de “Mi Carrito”:
+  Un div donde se muestren los productos seleccionados con su respectivo precio por unidad y debajo se visualice la cantidad a comprar, si es mayor a 1 se mostrará el total a gastar en ese producto.
+  Un div lateral donde se muestran los precios de los productos seleccionados, se sumen y den un costo total. Debajo del total el usuario deberá elegir el método de pago y el medio de envío. En la parte inferior de este div se encontrará un botón “Confirmar compra” que estará disponible una vez todos los datos estén completados
+
+Para la interfaz de “Mayoristas”:
+  Se mostrará un formulario donde los usuarios que deseen comprar por cantidades abundantes ingresen sus datos para poder contactarse con el cliente.
