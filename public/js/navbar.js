@@ -1,16 +1,30 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function showFunction(id) {
-    document.getElementById(id).classList.toggle("show");
-}
-  
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('#catalogoUl')) {
-        document.getElementById('catalogoUl').classList.remove("show");
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+})
+
+document.addEventListener("click", e => {
+    const isDropdownButton = e.target.matches("[data-dropdown-button]");
+    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+
+    let currentDropdown;
+    if (isDropdownButton) {
+        currentDropdown = e.target.closest("[data-dropdown]");
+        currentDropdown.classList.toggle("active");
+        console.log(currentDropdown)
     }
+
+    document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+        if (dropdown !== currentDropdown)
+            dropdown.classList.remove("active");
+    })
+})
+
+window.onload = e => { 
+    document.getElementById('FirstSec').style.marginTop = `${document.getElementById('nav').offsetHeight}px`;
 }
-document.getElementById('dropdownCatalogo').addEventListener('click', e => {
-    document.getElementById('dropdownCatalogo').ariaExpanded.toggle();
-    document.getElementById('dropdownCatalogoMenu').classList.toggle('show')
+window.addEventListener('resize', e => {
+    document.getElementById('FirstSec').style.marginTop = `${document.getElementById('nav').offsetHeight}px`;
 });

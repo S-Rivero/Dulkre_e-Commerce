@@ -5,290 +5,325 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dulkré</title>
-  <link rel="stylesheet" href="../public/css/styles_home.css">
-  <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Dulkré - Endulzantes en bajas calorías</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="../public/css/navbar.css">
+  <link rel="stylesheet" href="../public/css/footer.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles_home.css">
+
+  <script src="https://kit.fontawesome.com/7445fb44f6.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <!-- ##### Header Area Start ##### -->
   <header class="header_area">
-    <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
-      <!-- Classy Menu -->
-      <nav class="classy-navbar" id="essenceNav">
-        <!-- Logo -->
-        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-        <!-- Navbar Toggler -->
-        <div class="classy-navbar-toggler">
-          <span class="navbarToggler"><span></span><span></span><span></span></span>
-        </div>
-        <!-- Menu -->
-        <div class="classy-menu">
-          <!-- close btn -->
-          <div class="classycloseIcon">
-            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-          </div>
-          <!-- Nav Start -->
-          <div class="classynav">
-            <ul>
-              <li><a href="#">Shop</a>
-                <div class="megamenu">
-                  <ul class="single-mega cn-col-4">
-                    <li class="title">Women's Collection</li>
-                    <li><a href="shop.html">Dresses</a></li>
-                    <li><a href="shop.html">Blouses &amp; Shirts</a></li>
-                    <li><a href="shop.html">T-shirts</a></li>
-                    <li><a href="shop.html">Rompers</a></li>
-                    <li><a href="shop.html">Bras &amp; Panties</a></li>
-                  </ul>
-                  <ul class="single-mega cn-col-4">
-                    <li class="title">Men's Collection</li>
-                    <li><a href="shop.html">T-Shirts</a></li>
-                    <li><a href="shop.html">Polo</a></li>
-                    <li><a href="shop.html">Shirts</a></li>
-                    <li><a href="shop.html">Jackets</a></li>
-                    <li><a href="shop.html">Trench</a></li>
-                  </ul>
-                  <ul class="single-mega cn-col-4">
-                    <li class="title">Kid's Collection</li>
-                    <li><a href="shop.html">Dresses</a></li>
-                    <li><a href="shop.html">Shirts</a></li>
-                    <li><a href="shop.html">T-shirts</a></li>
-                    <li><a href="shop.html">Jackets</a></li>
-                    <li><a href="shop.html">Trench</a></li>
-                  </ul>
-                  <div class="single-mega cn-col-4">
-                    <img src="img/bg-img/bg-6.jpg" alt="">
+    <nav id="nav" class="navbar fixed-top">
+      <div class="brand-title"><a href="#"><img src="../public/media/logo_dulkre.png"></a></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li class="nav-item dropdown">
+            <a href="#">Catálogo</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="">Dulkré Clásico</a></li>
+              <li><a class="dropdown-item" href="">Dulkré Lite</a></li>
+              <li><a class="dropdown-item" href="">Dulkré Mate</a></li>
+              <li><a class="dropdown-item" href="">Dulkré Fructofibra</a></li>
+              <li><a class="dropdown-item" href="">Dulkré Stevia</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="dropdown" data-dropdown>
+              <a href="#" class="link" data-dropdown-button>Catálogo</a>
+              <div class="dropdown-menu information-grid">
+                <div>
+                  <div class="dropdown-heading">Nuestros Productos</div>
+                  <div class="dropdown-links">
+                    <a class="link" href="#">Dulkré Clásico</a>
+                    <a class="link" href="#">Dulkré Lite</a>
+                    <a class="link" href="#">Dulkré Mate</a>
+                    <a class="link" href="#">Dulkré Fructofibra</a>
+                    <a class="link" href="#">Dulkré Stevia</a>
                   </div>
                 </div>
-              </li>
-              <li><a href="#">Pages</a>
-                <ul class="dropdown">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li><a href="single-product-details.html">Product Details</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="single-blog.html">Single Blog</a></li>
-                  <li><a href="regular-page.html">Regular Page</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!-- Nav End -->
-        </div>
-      </nav>
-
-      <!-- Header Meta Data -->
-      <div class="header-meta d-flex clearfix justify-content-end">
-        <!-- Search Area -->
-        <div class="search-area">
-          <form action="#" method="post">
-            <input type="search" name="search" id="headerSearch" placeholder="Type for search">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
-        </div>
-        <!-- Favourite Area -->
-        <div class="favourite-area">
-          <a href="#"><img src="img/core-img/heart.svg" alt=""></a>
-        </div>
-        <!-- User Login Info -->
-        <div class="user-login-info">
-          <a href="#"><img src="img/core-img/user.svg" alt=""></a>
-        </div>
-        <!-- Cart Area -->
-        <div class="cart-area">
-          <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span>3</span></a>
-        </div>
+              </div>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <form class="d-flex container-fluid" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li> -->
+          <li><a href="#">Mayoristas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <div class="dropdown" data-dropdown>
+              <a class="link" data-dropdown-button>Mi Cuenta</a>
+              <div class="dropdown-menu">
+                <form class="login-form">
+                  <label for="username">Email</label>
+                  <input type="text" name="username" id="username">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password">
+                  <button type="submit">Login</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-    </div>
+
   </header>
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" aria-label="Main navigation">
-    <div class="container-fluid" id="navMainDiv">
-      <div>
-        <a class="navbar-brand" href="">Dulkré</a>
-        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+  <section id="FirstSec">
+    <img src="../public/media/banner_principal.jpg" alt="No se encontro el archivo">
+  </section>
+
+  <section style="margin-top: 2%;">
+    <div class="container" style="margin-bottom: 1%;">
+      <div class="section-heading text-center green-title">
+        <h1>Recetas Dulces</h2>
+          <h5>Dulces y Equilibradas para Vos</h5>
       </div>
-
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active btn-outline-light" aria-current="page" href="">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item dropdown">
-          <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">Catálogo</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="">Dulkré Clásico</a></li>
-            <li><a class="dropdown-item" href="">Dulkré Lite</a></li>
-            <li><a class="dropdown-item" href="">Dulkré Mate</a></li>
-            <li><a class="dropdown-item" href="">Dulkré Fructofibra</a></li>
-            <li><a class="dropdown-item" href="">Dulkré Stevia</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <form class="d-flex container-fluid" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Switch account</a>
-        </li>
-      </ul>
-
     </div>
-  </nav>
-<!-- ##### Welcome Area Start ##### -->
-<section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
-  <div class="container h-100">
-      <div class="row h-100 align-items-center">
-          <div class="col-12">
-              <div class="hero-content">
-                  <h6>asoss</h6>
-                  <h2>Winter Collection</h2>
-                  <a href="#" class="btn essence-btn">view collection</a>
-              </div>
+
+    <ul class="ul-recetas">
+      <li class="duo-receta">
+        <div class="receta-1">
+          <img class="img-receta" src="../public/media/receta1.jpg">
+          <div class="receta-text">
+            <div class="receta-title">
+              <!-- <a href="../recetas/receta_x.html"> -->
+              <a href="#">
+                <h6>Granola sin azucar</h6>
+              </a>
+              <span class="">Dulkré Clásico</span>
+            </div>
+            <div class="receta-desc">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit vitae, lobortis netus urna bibendum velit
+                pharetra nam, aptent parturient nec fames inceptos suspendisse himenaeos. Quam netus urna hac eu
+                ligula leo diam neque auctor nibh, class suspendisse varius rhoncus facilisi ultricies accumsan
+                dis imperdiet habitasse, sagittis nunc cubilia dignissim velit sed convallis mi donec. Hendrerit
+                aptent orci suspendisse fusce interdum ad risus varius malesuada, rhoncus senectus faucibus
+                primis neque bibendum tempus diam proin, mollis curabitur est commodo quis venenatis mattis
+                montes.
+              </span>
+              </br>
+              <!-- <a href="../recetas/receta_x.html" class="btn essence-btn">Leer Más</a> -->
+              <a href="#" class="btn essence-btn">Leer Más</a>
+            </div>
           </div>
+        </div>
+
+        <div class="receta-2">
+          <img class="img-receta" src="../public/media/receta2.png">
+
+          <div class="receta-text">
+            <div class="receta-title">
+              <!-- <a href="../recetas/receta_x.html"> -->
+              <a href="#">
+                <h6>Granola sin azucar</h6>
+              </a>
+              <span class="">Dulkré Clásico</span>
+            </div>
+            <div class="receta-desc">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit vitae, lobortis netus urna bibendum velit
+                pharetra nam, aptent parturient nec fames inceptos suspendisse himenaeos. Quam netus urna hac eu
+                ligula leo diam neque auctor nibh, class suspendisse varius rhoncus facilisi ultricies accumsan
+                dis imperdiet habitasse, sagittis nunc cubilia dignissim velit sed convallis mi donec. Hendrerit
+                aptent orci suspendisse fusce interdum ad risus varius malesuada, rhoncus senectus faucibus
+                primis neque bibendum tempus diam proin, mollis curabitur est commodo quis venenatis mattis
+                montes.
+              </span>
+              </br>
+              <!-- <a href="../recetas/receta_x.html" class="btn essence-btn">Leer Más</a> -->
+              <a href="#" class="btn essence-btn">Leer Más</a>
+            </div>
+          </div>
+        </div>
+
+      </li>
+      <li class="duo-receta">
+        <div class="receta-1">
+          <img class="img-receta" src="../public/media/receta3.jpg">
+          <div class="receta-text">
+            <div class="receta-title">
+              <!-- <a href="../recetas/receta_x.html"> -->
+              <a href="#">
+                <h6>Granola sin azucar</h6>
+              </a>
+              <span class="">Dulkré Clásico</span>
+            </div>
+            <div class="receta-desc">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit vitae, lobortis netus urna bibendum velit
+                pharetra nam, aptent parturient nec fames inceptos suspendisse himenaeos. Quam netus urna hac eu
+                ligula leo diam neque auctor nibh, class suspendisse varius rhoncus facilisi ultricies accumsan
+                dis imperdiet habitasse, sagittis nunc cubilia dignissim velit sed convallis mi donec. Hendrerit
+                aptent orci suspendisse fusce interdum ad risus varius malesuada, rhoncus senectus faucibus
+                primis neque bibendum tempus diam proin, mollis curabitur est commodo quis venenatis mattis
+                montes.
+              </span>
+              </br>
+              <!-- <a href="../recetas/receta_x.html" class="btn essence-btn">Leer Más</a> -->
+              <a href="#" class="btn essence-btn">Leer Más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="receta-2">
+          <img class="img-receta" src="../public/media/receta4.jpg">
+
+          <div class="receta-text">
+            <div class="receta-title">
+              <!-- <a href="../recetas/receta_x.html"> -->
+              <a href="#">
+                <h6>Granola sin azucar</h6>
+              </a>
+              <span class="">Dulkré Clásico</span>
+            </div>
+            <div class="receta-desc">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit vitae, lobortis netus urna bibendum velit
+                pharetra nam, aptent parturient nec fames inceptos suspendisse himenaeos. Quam netus urna hac eu
+                ligula leo diam neque auctor nibh, class suspendisse varius rhoncus facilisi ultricies accumsan
+                dis imperdiet habitasse, sagittis nunc cubilia dignissim velit sed convallis mi donec. Hendrerit
+                aptent orci suspendisse fusce interdum ad risus varius malesuada, rhoncus senectus faucibus
+                primis neque bibendum tempus diam proin, mollis curabitur est commodo quis venenatis mattis
+                montes.
+              </span>
+              </br>
+              <!-- <a href="../recetas/receta_x.html" class="btn essence-btn">Leer Más</a> -->
+              <a href="#" class="btn essence-btn">Leer Más</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="js-hide-footer-while-scrolling display-when-content-ready">
+    <div class="container-fluid px-md-5">
+      <div class="row element-footer">
+        <div class="col"></div>
+        <div class="col mb-4">
+          <h4 class="h3">Contactános</h4>
+          <ul class="contact-info">
+            <li class="contact-item"><svg class="icon-inline icon-lg icon-w contact-item-icon icon-logo"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+              </svg><a href="https://wa.me/5491166739403" class="contact-link">5491166739403</a></li>
+            <li class="contact-item"> <svg class="icon-inline icon-lg icon-w contact-item-icon icon-logo"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" />
+              </svg>
+              <a href="tel:1166739403" class="contact-link">1166739403</a>
+            </li>
+            <li class="contact-item"> <svg class="icon-inline icon-lg icon-w contact-item-icon icon-logo"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+              </svg>
+              <a href="mailto:tienda@corporaciondelbosque.com" class="contact-link">tienda@corporaciondelbosque.com</a>
+            </li>
+            <li class="contact-item"> <svg class="icon-inline icon-lg icon-w contact-item-icon icon-logo"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+              </svg>
+              Casullo 735, Morón--Horarios de Atención: Lunes a viernes de 9 hs a 16 hs</li>
+            <li class="contact-item"> <svg class="icon-inline icon-lg icon-w contact-item-icon icon-logo"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+              </svg>
+              <a target="_blank" href="http://corporaciondelbosque.com/" class="contact-link">Visita nuestro Blog!</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col"></div>
+        <div class="col mb-4">
+          <h4 class="h3">Sigamos conectados</h4>
+          <a class="social-icon-rounded" href="https://instagram.com/dulkre.fit" target="_blank"
+            aria-label="instagram Tienda del bosque">
+            <svg class="icon-inline icon-lg icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+
+          </a>
+          <a class="social-icon-rounded" href="https://www.facebook.com/dulkrearg/" target="_blank"
+            aria-label="facebook Tienda del bosque">
+            <svg class="icon-inline icon-lg icon-logo" viewBox="0 0 320 512">
+              <path
+                d="M279.1 288l14.3-92.7h-89v-60c0-25.4 12.5-50.2 52.3-50.2H297V6.4S260.4 0 225.4 0C152 0 104.3 44.4 104.3 124.7v70.6H22.9V288h81.4v224h100.2V288z" />
+            </svg> </a>
+        </div>
+        <div class="col"></div>
       </div>
-  </div>
-</section>
-<!-- ##### Welcome Area End ##### -->
 
-<!-- ##### Top Catagory Area Start ##### -->
-<div class="top_catagory_area section-padding-80 clearfix">
-  <div class="container">
-      <div class="row justify-content-center">
-          <!-- Single Catagory -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
-                  <div class="catagory-content">
-                      <a href="#">Clothing</a>
-                  </div>
-              </div>
+      <div class="divider mb-5"></div>
+
+      <div class="row element-footer">
+        <div class="col-md-9">
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <h4 class="h3">Medios de pago</h4>
+            </div>
+            <div class="col-md-8">
+              <img src="../public/media/icons/visa.png"       class="icon-logo lazyload" alt="visa">
+              <img src="../public/media/icons/master.png"     class="icon-logo lazyload" alt="mastercard">
+              <img src="../public/media/icons/amex.png"       class="icon-logo lazyload" alt="amex">
+              <img src="../public/media/icons/diners.png"     class="icon-logo lazyload" alt="diners">
+              <img src="../public/media/icons/banelco.png"    class="icon-logo lazyload" alt="ar_banelco">
+              <img src="../public/media/icons/cabal.png"      class="icon-logo lazyload" alt="ar_cabal">
+              <img src="../public/media/icons/tarnarj.png"    class="icon-logo lazyload" alt="ar_tarjeta-naranja">
+              <img src="../public/media/icons/tarshop.png"    class="icon-logo lazyload" alt="ar_tarjeta-shopping">
+              <img src="../public/media/icons/mp.png"         class="icon-logo lazyload" alt="mercadopago">
+              <img src="../public/media/icons/argcard.png"    class="icon-logo lazyload" alt="ar_argencard">
+              <img src="../public/media/icons/nativa.png"     class="icon-logo lazyload" alt="nativa">
+              <img src="../public/media/icons/cencosud.png"   class="icon-logo lazyload" alt="ar_cencosud">
+              <img src="../public/media/icons/pagofacil.png"  class="icon-logo lazyload" alt="pagofacil">
+              <img src="../public/media/icons/rapi.png"       class="icon-logo lazyload" alt="rapipago">
+            </div>
           </div>
-          <!-- Single Catagory -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-3.jpg);">
-                  <div class="catagory-content">
-                      <a href="#">Shoes</a>
-                  </div>
-              </div>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <h4 class="h3">Medios de envío</h4>
+            </div>
+            <div class="col-md-8">
+              <img src="../public/media/icons/oca.png"        class="icon-logo lazyload" alt="ar_oca">
+            </div>
           </div>
-          <!-- Single Catagory -->
-          <div class="col-12 col-sm-6 col-md-4">
-              <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
-                  <div class="catagory-content">
-                      <a href="#">Accessories</a>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
-  </div>
-</div>
-<!-- ##### Top Catagory Area End ##### -->
-
-<!-- ##### CTA Area Start ##### -->
-<div class="cta-area">
-  <div class="container">
-      <div class="row">
-          <div class="col-12">
-              <div class="cta-content bg-img background-overlay" style="background-image: url(img/bg-img/bg-5.jpg);">
-                  <div class="h-100 d-flex align-items-center justify-content-end">
-                      <div class="cta--text">
-                          <h6>-60%</h6>
-                          <h2>Global Sale</h2>
-                          <a href="#" class="btn essence-btn">Buy Now</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    </div>
+    <div class="container-fluid footer-copyright">
+      <div class="d-inline-block mr-md-2 py-2">
+        Copyright Tienda del bosque - 2022. Todos los derechos reservados.
       </div>
-  </div>
-</div>
-<!-- ##### CTA Area End ##### -->
+    </div>
+  </footer>
 
-<!-- ##### New Arrivals Area Start ##### -->
-<section class="new_arrivals_area section-padding-80 clearfix">
-  <div class="container">
-      <div class="row">
-          <div class="col-12">
-              <div class="section-heading text-center">
-                  <h2>Popular Products</h2>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="container">
-      <div class="row">
-          <div class="col-12">
-              <div class="popular-products-slides owl-carousel">
-
-                  <!-- Single Product -->
-                  <div class="single-product-wrapper">
-                      <!-- Product Image -->
-                      <div class="product-img">
-                          <img src="img/product-img/product-1.jpg" alt="">
-                          <!-- Hover Thumb -->
-                          <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-                          <!-- Favourite -->
-                          <div class="product-favourite">
-                              <a href="#" class="favme fa fa-heart"></a>
-                          </div>
-                      </div>
-                      <!-- Product Description -->
-                      <div class="product-description">
-                          <span>topshop</span>
-                          <a href="single-product-details.html">
-                              <h6>Knot Front Mini Dress</h6>
-                          </a>
-                          <p class="product-price">$80.00</p>
-
-                          <!-- Hover Content -->
-                          <div class="hover-content">
-                              <!-- Add to Cart -->
-                              <div class="add-to-cart-btn">
-                                  <a href="#" class="btn essence-btn">Add to Cart</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- ##### New Arrivals Area End ##### -->
-
-<!-- ##### Footer Area Start ##### -->
-<footer class="footer_area clearfix">
-  <div class="container">
-      <div class="row align-items-end">
-          <div class="col-12 col-md-6">
-              <div class="single_widget_area">
-                  <div class="footer_social_area">
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                      <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-</footer>
+  <script src="script_home.js"></script>
+  <script src="../public/js/navbar.js"></script>
 </body>
 
 </html>

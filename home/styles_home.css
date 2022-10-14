@@ -1,0 +1,74 @@
+body{
+  background-color: rgb(239, 231, 229); 
+}
+#navMainDiv{
+  height: 10vh;
+}
+#FirstSec{ 
+  width: 100%;
+}
+#FirstSec img{
+  /* background-image: url(../media/banner_principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh; */
+  height: auto;
+  width: 100%;
+  
+}
+
+.green-title{
+  color: rgb(123, 200, 27);
+}
+.green-title>h1{
+  font-size: 4rem;
+}
+.green-title>h5{
+  font-size: 1.5rem;
+}
+.ul-recetas{
+  list-style: none;
+  padding : 0 10% 0 10%;
+}
+
+.duo-receta{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-rule: 15px double #000;
+  /* column-rule: 2px double #88f; */
+}
+.receta-1,.receta-2{
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+}
+.img-receta{
+  height: 30vh;
+  width: auto;
+}
+.receta-desc{
+  text-align: justify;
+  padding: 0 15% 0 15%;
+}
+
+/* .receta-1 img,.receta-2 img{
+  max-width: 100%;
+} */
+
+/* .receta-text{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  width: 100%;
+  column-rule-style: ridge;
+  column-rule-color: #88f;
+} */
+/* .receta-title{
+  
+} */
+/* footer{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+} */

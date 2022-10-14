@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(200, 200, 200);
+    padding-top: 2rem;
+}
+
+.icon-logo{
+    height: 1rem;
+    width: 1rem;
+}
+
+.footer-copyright{
+    background-color: #333;
+    color: white;
+}
